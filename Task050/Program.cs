@@ -45,16 +45,16 @@ void PrintMatrix(int [,] Array)
 
 void FindElement(int [,] Array)
 {
-    int Element = 0;
+    
     System.Console.WriteLine("Введите строку m для поиска элемента:");
     int mValue = int.Parse(Console.ReadLine());
     System.Console.WriteLine("Введите столбец n для поиска элемента:");
     int nValue = int.Parse(Console.ReadLine());
-    if (mValue>=Array.GetLength(0) || nValue>=Array.GetLength(1) || mValue<0 || nValue<0) 
+    if (mValue>Array.GetLength(0) || nValue>Array.GetLength(1) || mValue<0 || nValue<0) 
     {
         System.Console.WriteLine($"Элемента с [{mValue};{nValue}] в данной матрице не существует.");
     }
-    else System.Console.WriteLine($"Элемент с координатами [{mValue};{nValue}] - {Array[mValue,nValue]}.");
+    else System.Console.WriteLine($"Элемент с координатами [{mValue};{nValue}] - {Array[mValue-1,nValue-1]}.");
 
     
 }
