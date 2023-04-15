@@ -55,8 +55,6 @@ void FindElement(int [,] Array)
         System.Console.WriteLine($"Элемента с [{mValue};{nValue}] в данной матрице не существует.");
     }
     else System.Console.WriteLine($"Элемент с координатами [{mValue};{nValue}] - {Array[mValue-1,nValue-1]}.");
-
-    
 }
 /*---------------------------------------------------------------------------------------*/
 
